@@ -1,0 +1,74 @@
+{
+ "history": [],
+ "final": {
+  "recall@20": 0.04163097892995585,
+  "ndcg@20": 0.03168992927421666,
+  "precision@20": 0.013880701989416573,
+  "coverage": 0.0009028574217320222,
+  "gini": 0.9994983495150841,
+  "head_share_recs": 1.0,
+  "head_share_train": 0.5302088260650635,
+  "head_share_test": 0.5182929636074056,
+  "avg_pop_recs": 858.9593505859375,
+  "avg_pop_test": 91.11500549316406,
+  "tail_recall": 0.0,
+  "head_recall": 0.07361783382921089,
+  "by_activity": [
+   {
+    "group": 1,
+    "min": 8,
+    "max": 10,
+    "users": 7368,
+    "recall@20": 0.04225479551212449,
+    "ndcg@20": 0.02288691542359971
+   },
+   {
+    "group": 2,
+    "min": 11,
+    "max": 15,
+    "users": 6874,
+    "recall@20": 0.044030646881970704,
+    "ndcg@20": 0.027829483626137855
+   },
+   {
+    "group": 3,
+    "min": 16,
+    "max": 28,
+    "users": 8131,
+    "recall@20": 0.0434567001071736,
+    "ndcg@20": 0.032062677266509326
+   },
+   {
+    "group": 4,
+    "min": 29,
+    "max": 811,
+    "users": 7485,
+    "recall@20": 0.03682983838599774,
+    "ndcg@20": 0.04349574029771802
+   }
+  ]
+ },
+ "config": {
+  "dataset": "gowalla",
+  "model": "pop",
+  "layers": 3,
+  "dim": 64,
+  "lr": 0.001,
+  "decay": 0.0001,
+  "batch": 2048,
+  "epochs": 1000,
+  "eval_every": 20,
+  "k": 20,
+  "seed": 2020,
+  "tag": "gowalla_pop"
+ },
+ "data": {
+  "users": 29858,
+  "items": 40981,
+  "train": 810128,
+  "test": 217242,
+  "density": 0.0008396216228570437
+ },
+ "minutes": 0.006212890148162842,
+ "device": "NVIDIA GeForce RTX 3070 Laptop GPU"
+}
